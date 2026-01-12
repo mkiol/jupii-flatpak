@@ -1,6 +1,6 @@
 app-id: net.mkiol.Jupii
 runtime: org.kde.Platform
-runtime-version: "5.15-24.08"
+runtime-version: "5.15-25.08"
 sdk: org.kde.Sdk
 rename-icon: jupii
 command: jupii
@@ -224,17 +224,6 @@ modules:
         url: https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz
         sha256: 40973d44970dbc83ef302b0609f2e74982be2d85916dd2ee7472d30678a7abe6
 
-  - name: fmt
-    buildsystem: cmake-ninja
-    config-opts:
-      - -DFMT_DOC=OFF
-      - -DFMT_TEST=OFF
-      - -DFMT_FUZZ=OFF
-    sources:
-      - type: archive
-        url: https://github.com/fmtlib/fmt/releases/download/11.1.3/fmt-11.1.3.zip
-        sha256: 7df2fd3426b18d552840c071c977dc891efe274051d2e7c47e2c83c3918ba6df
-
   - python3-modules.yaml
 
   - name: jupii
@@ -260,4 +249,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/mkiol/Jupii.git
-        commit: 54a1d7f15c2894534c9ec72a2e1d1ebbe9169b0c
+        commit: 3b00e3c6748dd3af4bd745844cfa006b5bf22281
