@@ -249,4 +249,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/mkiol/Jupii.git
-        commit: c4889bf8cdfd8b1036ea1713c743523ec11d37ad
+        commit: 6cab9f1d59c616c59294342dd2e14e3dcb5558e5
